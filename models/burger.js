@@ -12,12 +12,12 @@ async function burgerDevoured(){
     return burgerList.filter( burger=>burger.devoured == true );
 }
 
-async function addBurger(){
+async function addBurger(name){
     burgerList = await orm.insertOne()
     return burgerList.filter( name, false );
 }
 
-async function burgerDevour(){
+async function burgerDevour(id){
     burgerList = await orm.updateOne()
     return burgerList.filter( id, true );
 }
