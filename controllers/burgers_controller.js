@@ -1,26 +1,23 @@
 const express = require("express");
-const models = require("../models/burger")
+var router = express.Router();
+const models = require("../models/burger");
 
-function router(app){
-    app.get("/", async function(req,res){
-        var availBurger = await models.burgerAvailable();
-        var burgDev = await models.burgerDevoured();
-        res.render( "index", { availBurger, burgDev })
-    }
-    )
+router.get("/", async function (req, res) {
+  var availBurger = await models.burgerAvailable();
+  var burgDev = await models.burgerDevoured();
+  res.render("index");
+});
 
-    app.get("/delete/:id", async function(req, res){
-        const devour=await models.delete.id (req.params.id)
+router.get("/delete/:id", async function (req, res) {
+  const devour = await models.delete.id(req.params.id);
 
-        res.redirect("/")
-    })
+  res.redirect("/");
+});
 
-    app.post("/", async function(req,res){
-        const add = await models.addBurger(req.body.models)
+router.post("/", async function (req, res) {
+  const add = await models.addBurger(req.body.models);
 
-         res.redirect("/")
-    })
+  res.redirect("/");
+});
 
-}
-
-    module.exports = router;
+module.exports = router;

@@ -5,7 +5,7 @@ let devoured
 let id
 
 function selectAll(){
-    return connection.query("SELECT * FROM burger")
+    return connection.query("SELECT * FROM burgers")
 }
 
 function insertOne(){
