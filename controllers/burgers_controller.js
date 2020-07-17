@@ -15,7 +15,7 @@ router.get("/devoured/:id", async function (req, res) {
 });
 
 router.post("/", async function (req, res) {
-  const add = await models.addBurger(req.body);
+  const add = await models.addBurger(req.body.burgers);
 
   res.redirect("/");
 });

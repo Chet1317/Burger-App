@@ -19,7 +19,7 @@ async function addBurger(name){
 
 async function burgerDevour(id){
   
-    return orm.updateOne( id, true );
+    return orm.updateOne(true, id);
 }
 
 module.exports = { burgerAvailable, burgerDevoured, addBurger, burgerDevour }

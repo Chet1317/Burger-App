@@ -1,25 +1,18 @@
+{{#each availBurger}}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <span class="input-group-text" id="inputGroup-sizing-default">{{burger_name}}</span>
+            <div class="row">
+                <div class="col">
+                    <a href="/devoured/{{id}}" type="button" class="btn btn-danger">Devour<a>
+                            {{/each}}
 
-
-        {{#each availBurger}}  
-        <div class="container">
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-primary">{{burger_name}}</button>
-          
-              
-                            <div class="row">
-                                <div class="col">
-                                    <a href="/devoured/{{id}}" type="button" class="btn btn-danger">Devour<a>
-                                             {{/each}}
-
-                                    {{#each burgDev}}
-                                    <div class="alert alert-warning" role="alert">{{burger_name}}</div>
-                                    {{/each}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            {{#each burgDev}}
+                            <div class="alert alert-warning" role="alert">{{burger_name}}</div>
+                            {{/each}}
                 </div>
-
-       
-
+            </div>
+        </div>
+    </div>
+</div>

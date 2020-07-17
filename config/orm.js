@@ -7,7 +7,7 @@ function selectAll(){
 }
 
 function insertOne(name, devoured){
-    return connection.query("INSERT INTO burgers (burger_name, devoured) VALUES (?,?)", [name, devoured])
+    return connection.query("INSERT INTO burgers(burger_name, devoured) VALUES (?,?)", [name, devoured])
 }
 
 function updateOne(id, devoured){
