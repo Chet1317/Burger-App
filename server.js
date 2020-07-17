@@ -4,8 +4,8 @@ require( 'dotenv' ).config() // looks for .env ; process.env gets initialized
 
 const express = require("express");
 const exphbs = require("express-handlebars");
-const routerController = require("./controllers/burgers_controller");
-
+const controller = require("./controllers/burgers_controller");
+const PORT = process.env.PORT || 8080;
 const app = express();
 // handlebars initialization
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -17,9 +17,9 @@ app.use(express.json());
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-const PORT = process.env.PORT || 8080;
 
-// routerController(app)
+
+controller(app)
 
 // for serving media assets
 app.use( express.static('public') )

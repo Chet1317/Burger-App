@@ -1,17 +1,26 @@
-const express = require ("express")
+const express = require("express");
 const models = require("../models/burger")
 
-function getBurgerDb(app){
+function router(app){
     app.get("/", async function(req,res){
         var availBurger = await models.burgerAvailable();
         var burgDev = await models.burgerDevoured();
         res.render( 'index.handlebars', { availBurger, burgDev })
     }
     )
+
+    app.get("/delete/:id", async function(req, res){
+        const devour=await models.delete.id (req.params.id)
+
+        res.redirect("/")
+    })
+
     app.post("/", async function(req,res){
-         await models.addBurger(req.body.models)
+        const add = await models.addBurger(req.body.models)
+
+         res.redirect("/")
     })
 
 }
 
-    models.exports = getBurgerDb
+    module.exports = router;

@@ -1,4 +1,4 @@
-const connectJs = require ("./connection.js")
+const db = require ("./connection")
 
 let name 
 let devoured
