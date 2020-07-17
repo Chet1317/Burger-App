@@ -5,17 +5,17 @@ const models = require("../models/burger");
 router.get("/", async function (req, res) {
   var availBurger = await models.burgerAvailable();
   var burgDev = await models.burgerDevoured();
-  res.render("index");
+  res.render("index", {availBurger, burgDev});
 });
 
-router.get("/delete/:id", async function (req, res) {
-  const devour = await models.delete.id(req.params.id);
+router.get("/devoured/:id", async function (req, res) {
+  const devoured = await models.burgerDevour(req.params.id);
 
   res.redirect("/");
 });
 
 router.post("/", async function (req, res) {
-  const add = await models.addBurger(req.body.models);
+  const add = await models.addBurger(req.body);
 
   res.redirect("/");
 });

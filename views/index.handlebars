@@ -1,46 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger App</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>Eat Da Burger</h1>
-        {{#each available}}
+        {{#each availBurger}}  
+        <div class="container">
         <div class="row">
             <div class="col">
-                <button type="button" class="btn btn-primary">{{name}}</button>
-               {{/each}}
-                <form action="/" metod="POST">
-                <div class="row">
-                    <div class="col">
-                        <label for="burgerType" name="burgers">Burgers</label>
-                        <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
-                                <button class="btn btn-outline-secondary">Make the Burger</button>
-                            </form>
-
+                <button type="button" class="btn btn-primary">{{burger_name}}</button>
+          
+              
                             <div class="row">
                                 <div class="col">
-                                    <a href="/delete/{{id}}" type="button" class="btn btn-danger">Devour<a>
-                                    {{#each Devoured}}
-                                    <div class="alert alert-warning" role="alert">{{name}}</div>
+                                    <a href="/devoured/{{id}}" type="button" class="btn btn-danger">Devour<a>
+                                             {{/each}}
+
+                                    {{#each burgDev}}
+                                    <div class="alert alert-warning" role="alert">{{burger_name}}</div>
                                     {{/each}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           
+
        
 
-</body>
-
-</html>

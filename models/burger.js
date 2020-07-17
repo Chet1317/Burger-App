@@ -13,13 +13,13 @@ async function burgerDevoured(){
 }
 
 async function addBurger(name){
-    burgerList = await orm.insertOne()
-    return burgerList.filter( name, false );
+   
+    return orm.insertOne( name, false );
 }
 
 async function burgerDevour(id){
-    burgerList = await orm.updateOne()
-    return burgerList.filter( id, true );
+  
+    return orm.updateOne( id, true );
 }
 
 module.exports = { burgerAvailable, burgerDevoured, addBurger, burgerDevour }
