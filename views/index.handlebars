@@ -2,17 +2,12 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <span class="input-group-text" id="inputGroup-sizing-default">{{burger_name}}</span>
-            <div class="row">
-                <div class="col">
-                    <a href="/devoured/{{id}}" type="button" class="btn btn-danger">Devour<a>
-                            {{/each}}
-
-                            {{#each burgDev}}
-                            <div class="alert alert-warning" role="alert">{{burger_name}}</div>
-                            {{/each}}
-                </div>
-            </div>
+            <span class="input-group-text">{{burger_name}}</span>
+            <a href="/devoured/{{id}}" type="button" class="btn btn-danger">Devour<a>
+                    {{/each}}
         </div>
+        {{#each burgDev}}
+        <div class="alert alert-warning" role="alert">{{burger_name}}</div>
+        {{/each}}
     </div>
 </div>

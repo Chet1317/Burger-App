@@ -10,8 +10,8 @@ function insertOne(name, devoured){
     return connection.query("INSERT INTO burgers(burger_name, devoured) VALUES (?,?)", [name, devoured])
 }
 
-function updateOne(id, devoured){
-    return connection.query("UPDATE burgers SET id=? WHERE devoured=?", [id, devoured])
+function updateOne(devoured, id){
+    return connection.query("UPDATE burgers SET devoured=? WHERE id=?", [devoured, id])
 }
 
 module.exports = {selectAll, insertOne, updateOne}
