@@ -5,7 +5,7 @@ function router(app){
     app.get("/", async function(req,res){
         var availBurger = await models.burgerAvailable();
         var burgDev = await models.burgerDevoured();
-        res.render( 'index.handlebars', { availBurger, burgDev })
+        res.render( "index", { availBurger, burgDev })
     }
     )
 
