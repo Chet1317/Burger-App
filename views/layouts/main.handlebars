@@ -16,24 +16,41 @@
             background-image: url("https://breaknwings.ca/wp-content/uploads/2018/08/Burgers.jpg");
             background-position-y: center;
         }
+     .alert-warning {
+    color: #f9f7f6;
+    background-color: #ff8800;
+    border-color: #f1ebeb;
+    text-align: center;
+    font-family: cursive;
+}
+
+body {
+
+    background-color: #ffb671;
+}
     </style>
 <div class="container">
         <div class="jumbotron jumbotron-fluid">
-            <h1 style="color:rgb(75, 64, 238)" class=" display-4">EAT DA BURGER</h1>
+            <h1 style="color: rgb(26 236 12 / 69%);background-color: black;-webkit-text-stroke: thick;text-align: center;" style="color:rgb(75, 64, 238)" class=" display-4">EAT-DA-BURGER</h1>
             <div style="background-image: url('https://breaknwings.ca/wp-content/uploads/2018/08/Burgers.jpg');">
             </div>
         </div>
     </div>
         {{{body}}}
-
-        <form action="/" method="POST">
+<div class="container">
+       <form action="/" method="POST">
+       <div class="container">
             <div class="row">
                 <div class="col">
-                    <label for="burgerType" class="form-label">Burgers</label>
+                    <label for="burgerType" class="form-label"></label>
                     <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
-                    <button class="btn btn-outline-secondary">Make the Burger</button>
+                    <button class="btn btn-outline-success">Make the Burger</button>
+                </div>
+                </div>
+                </div>
         </form>
-
+</div>
+       
        
 
 </body>
