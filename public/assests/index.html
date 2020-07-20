@@ -12,33 +12,39 @@
 
 <body>
 
+    <style>
+        .jumbotron {
+            background-image: url("https://breaknwings.ca/wp-content/uploads/2018/08/Burgers.jpg");
+            background-position-y: center;
+        }
+    </style>
     <div class="container">
-        <h1>Eat Da Burger</h1>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4">EAT DA BURGER</h1>
+            <div style="background-image: url('https://breaknwings.ca/wp-content/uploads/2018/08/Burgers.jpg');">
+            </div>
+        </div>
+    </div>
+    <form action="/" metod="POST">
         <div class="row">
             <div class="col">
-                <span class="input-group-text" id="inputGroup-sizing-default">Burger</span>
+                <label for="burgerType" name="burgers">Burgers</label>
+                <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
+                <button class="btn btn-outline-secondary">Make the Burger</button>
+    </form>
 
-                <form action="/" metod="POST">
-                <div class="row">
-                    <div class="col">
-                        <label for="burgerType" name="burgers">Burgers</label>
-                        <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
-                                <button class="btn btn-outline-secondary">Make the Burger</button>
-                            </form>
-
-                            <div class="row">
-                                <div class="col">
-                                    <button type="button" class="btn btn-danger">Devour</button>
-                                    <div class="alert alert-warning" role="alert">Devoured It!</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-danger">Devour</button>
+            <div class="alert alert-warning" role="alert">Devoured It!</div>
         </div>
-   
-           
-       
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
 
 </body>
 
