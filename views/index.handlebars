@@ -1,16 +1,17 @@
-{{#each availBurger}}
 <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
+     <div class="row">
+        <div class="col-lg-8 text-center">
+{{#each availBurger}}
+   
             <span class="input-group-text">{{burger_name}}</span>
             <a href="/devoured/{{id}}" type="button" class="btn btn-danger">Devour<a>
                     {{/each}}
-         </div>
+      </div>
+
         {{#each burgDev}}
 
         <div class="alert alert-warning container" role="alert">Devoured it!</div>
         {{/each}}
        
-    </div>
-</div>
-</div>
+     </div>
+ </div>
