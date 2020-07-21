@@ -9,5 +9,5 @@ Node.js, mySQL Workbench, npm install express, express-handlebars and mysql.
 
 # Usage 
 Run mysql schema.sql and seeds.sql files to create database. Run node server.js to run the app. Sample link:
-![image](https://user-images.githubusercontent.com/63617922/88011033-4bb92300-cae4-11ea-8351-4203cde34a65.png)
+![image](https://user-images.githubusercontent.com/63617922/88011101-7b682b00-cae4-11ea-81a6-19043e52f268.png)
 
