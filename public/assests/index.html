@@ -18,49 +18,40 @@
             background-position-y: center;
         }
         .alert-warning {
-    color: #f9f7f6;
-    background-color: #ff8800;
-    border-color: #f1ebeb;
-    text-align: center;
-    font-family: cursive;
-}
+            color: #f9f7f6;
+            background-color: #ff8800;
+            border-color: #f1ebeb;
+            text-align: center;
+            font-family: cursive;
+        }
+        body {
 
-body {
-
-    background-color: #ffb671;
-}
-
+            background-color: #ffb671;
+        }
     </style>
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
-            <h1 style="color: rgb(26 236 12 / 69%);background-color: black;-webkit-text-stroke: thick;text-align: center;" class="display-4">EAT-DA-BURGER</h1>
+            <h1 style="color: rgb(26 236 12 / 69%);background-color: black;-webkit-text-stroke: thick;text-align: center;"
+                class="display-4">EAT-DA-BURGER</h1>
             <div style="background-image: url('https://breaknwings.ca/wp-content/uploads/2018/08/Burgers.jpg');">
             </div>
         </div>
     </div>
     <div class="container">
-    <form action="/" metod="POST">
+        <form action="/" metod="POST">
+            <div class="row">
+                <div class="col">
+                    <label for="burgerType" name="burgers"></label>
+                    <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
+                    <button class="btn btn-outline-success">Make the Burger</button>
+        </form>
         <div class="row">
             <div class="col">
-                <label for="burgerType" name="burgers"></label>
-                <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
-                <button class="btn btn-outline-success">Make the Burger</button>
-    </form>
-   
-
-    <div class="row">
-        <div class="col">
-            <button type="button" class="btn btn-danger">Devour</button>
-            <div class="alert alert-warning" role="alert">Devoured It!</div>
+                <button type="button" class="btn btn-danger">Devour</button>
+                <div class="alert alert-warning" role="alert">Devoured It!</div>
+            </div>
         </div>
     </div>
-    </div>
-
-  
-
-
-
-
 
 </body>
 
