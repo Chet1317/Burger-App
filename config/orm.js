@@ -1,7 +1,5 @@
 const connection = require ("./connection")
 
-
-
 function selectAll(){
     return connection.query("SELECT * FROM burgers")
 }
