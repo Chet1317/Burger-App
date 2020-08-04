@@ -26,7 +26,7 @@
         }
         body {
 
-            background-color: #ffb671;
+            background: #ffb671;
         }
         a:not([href]):not([tabindex]) {
     color: inherit;
@@ -46,13 +46,19 @@
     <div class="container">
         <form action="/" metod="POST">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-3">
                     <label for="burgerType" name="burgers"></label>
                     <input class="form-control" id="burgerType" name="burgers" placeholder="Burger Input">
                     <button class="btn btn-outline-success">Make the Burger</button>
+                </div>
+            </div>
         </form>
-        <div class="row">
-            <div class="col">
+    </div>
+    
+
+            <div class="container">
+                <div class="row">
+            <div class="col-sm-4">
                 <button type="button" class="btn btn-danger">Devour</button>
                 <div class="alert alert-warning" role="alert">Devoured It!</div>
             </div>
