@@ -7,12 +7,18 @@
     position: absolute;
    
 }
+.input-group-text {
+    color: #000000;
+    border-color: red;
+    font-size: 1.5rem;
+    background-color: #d4e23cc2;
+}
 </style>
 
             
 
 <div class="container">
-     <div class="row">
+     <div class="row justify-content-center">
         <div class="col-xs">
                 {{#each availBurger}}
    
@@ -22,7 +28,7 @@
                     {{/each}}
                </div>
                   {{#each burgDev}}
-                <div class="col-sm">
+                <div class="col-xs">
         <div  class="alert alert-warning container" role="alert">Devoured it!
                    </div>
          </div>
